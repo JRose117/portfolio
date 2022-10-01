@@ -1,3 +1,108 @@
+import Bootstrap from '../images/Bootstrap.png'
+import CSS from '../images/CSS3.png'
+import Django from '../images/Django.png'
+import Express from '../images/Express.png'
+import GitHub from '../images/Github.png'
+import Heroku from '../images/Heroku.png'
+import HTML5 from '../images/HTML5.png'
+import Insomnia from '../images/Insomnia.png'
+import JavaScript from '../images/JavaScript.png'
+import MongoDB from '../images/MongoDB.png'
+import Mongoose from '../images/Mongoose.png'
+import Netlify from '../images/Netlify.png'
+import Nodejs from '../images/Nodejs.png'
+import npm from '../images/npm.png'
+import Postgresql from '../images/Postgresql.png'
+import Python from '../images/Python.png'
+import ReactIcon from '../images/ReactIcon.png'
+import SASS from '../images/SASS.png'
+import VSCode from '../images/VSCode.png'
+import Yarn from '../images/Yarn.png'
+
+const images = [
+  {
+    name: "Bootstrap",
+    imageSrc: Bootstrap,
+  },
+  {
+    name: "CSS",
+    imageSrc: CSS,
+  },
+  {
+    name: "Django",
+    imageSrc: Django,
+  },
+  {
+    name: "Express",
+    imageSrc: Express,
+  },
+  {
+    name: "GitHub",
+    imageSrc: GitHub,
+  },
+  {
+    name: "Heroku",
+    imageSrc: Heroku,
+  },
+  {
+    name: "HTML5",
+    imageSrc: HTML5,
+  },
+  {
+    name: "Insomnia",
+    imageSrc: Insomnia,
+  },
+  {
+    name: "JavaScript",
+    imageSrc: JavaScript,
+  },
+  {
+    name: "MongoDB",
+    imageSrc: MongoDB,
+  },
+  {
+    name: "Mongoose",
+    imageSrc: Mongoose,
+  },
+  {
+    name: "Netlify",
+    imageSrc: Netlify,
+  },
+  {
+    name: "Node.js",
+    imageSrc: Nodejs,
+  },
+  {
+    name: "npm",
+    imageSrc: npm,
+  },
+  {
+    name: "Postgresql",
+    imageSrc: Postgresql,
+  },
+  {
+    name: "Python",
+    imageSrc: Python,
+  },
+  {
+    name: "React",
+    imageSrc: ReactIcon,
+  },
+  {
+    name: "Sass",
+    imageSrc: SASS,
+  },
+  {
+    name: "VSCode",
+    imageSrc: VSCode,
+  },
+  {
+    name: "Yarn",
+    imageSrc: Yarn,
+  },
+];
+
+
 const Homepage = () => {
   return (
     <>
@@ -25,8 +130,13 @@ const Homepage = () => {
         <div className="skills-container">
           <h1 className="skills-title" > Skills </h1>
           <div className="skills-intro">
-          <h4>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
-</h4>          </div>
+          {images.map((image, index) => (
+            <div className='Image' key={index}>
+              <img className = 'skills-image' src={image.imageSrc} alt={image.name} />
+              <div className = 'skills-name'>{image.name}</div>
+            </div>
+          ))}
+          </div>
         </div>
       </main>
       <div className='break'></div>
