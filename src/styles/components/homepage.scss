@@ -22,7 +22,7 @@
   margin-bottom: 30px;
 }
 
-.about-wrapper, .about-container, .about-title, .projects-container, .projects-title, .projects-wrapper {
+.head-wrapper, .head-container, .head-title, .projects-container, .projects-title, .projects-wrapper {
   background: $background-two;
 }
 
@@ -55,6 +55,12 @@
   }
   .skills-image{
     width: calc(100vw*0.08);
+  }
+
+  img {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
   }
   }
 

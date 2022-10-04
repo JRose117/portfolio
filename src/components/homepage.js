@@ -20,6 +20,9 @@ import VSCode from '../images/VSCode.png'
 import Yarn from '../images/Yarn.png'
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react';
+import Minesweeeper from '../images/minesweeper.png'
+import Recipes from '../images/recipes.png'
+import WatchIt from '../images/watchit.png'
 import 'bootstrap/dist/css/bootstrap.css';
 
 const images = [
@@ -109,11 +112,11 @@ const images = [
 const Homepage = () => {
   return (
     <>
-      <main className="head-wrapper">
-        <div className="head-container">
-          <h1 className="head-title" > Header </h1>
-          <div className="head-intro">
-          <h4>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
+       <main className="about-wrapper">
+        <div className="about-container">
+          <h1 className="about-title" > About </h1>
+          <div className="about-intro">
+            <h4>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
 </h4>
           </div>
         </div>
@@ -126,17 +129,24 @@ const Homepage = () => {
             <div style={{ display: 'block', width: 700, padding: 30 }}>
                   <Carousel interval={null}>
                     <Carousel.Item>
-                      <div className="d-block w-100" data-bs-interval="false"> <h1> 1 </h1> </div> 
+                      <div className="d-block w-100" data-bs-interval="false"> <img src={Minesweeeper} alt="Minesweeper"/> </div> 
                       <Carousel.Caption>
                         <h3>Label for first slide</h3>
                         <p>Sample Text for Image One</p>
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                    <div className="d-block w-100" data-bs-interval="false"> <h1> 2 </h1> </div> 
+                    <div className="d-block w-100" data-bs-interval="false"> <img src={Recipes} alt="Recipes"/> </div> 
                       <Carousel.Caption>
                         <h3>Label for second slide</h3>
                         <p>Sample Text for Image Two</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                    <div className="d-block w-100" data-bs-interval="false"> <img src={WatchIt} alt="WatchIt"/> </div> 
+                      <Carousel.Caption>
+                        <h3>Label for third slide</h3>
+                        <p>Sample Text for Image Three</p>
                       </Carousel.Caption>
                     </Carousel.Item>
                   </Carousel>
@@ -159,11 +169,11 @@ const Homepage = () => {
         </div>
       </main>
       <div className='break'></div>
-      <main className="about-wrapper">
-        <div className="about-container">
-          <h1 className="about-title" > About </h1>
-          <div className="about-intro">
-            <h4>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
+      <main className="head-wrapper">
+        <div className="head-container">
+          <h1 className="head-title" > Header </h1>
+          <div className="head-intro">
+          <h4>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
 </h4>
           </div>
         </div>
