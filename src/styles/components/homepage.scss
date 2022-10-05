@@ -1,4 +1,4 @@
-.contact-wrapper, .about-wrapper, .skills-wrapper, .projects-wrapper, .interests-wrapper {
+.contact-wrapper, .about-wrapper, .skills-wrapper, .interests-wrapper, .p1-wrapper, .p2-wrapper, .p3-wrapper, .p4-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   background: $background-two;
 }
 
-.contact-container, .about-container, .skills-container, .projects-container, .interests-container {
+.contact-container, .about-container, .skills-container, .interests-container, .p1-container, .p2-container, .p3-container, .p4-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -18,12 +18,12 @@
   }
 }
 
-.contact-title, .about-title, .skills-title, .projects-title, .interests-title {
+.contact-title, .about-title, .skills-title, .interests-title, .p1-title, .p2-title, .p3-title, .p4-title {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.interests-wrapper, .projects-wrapper {
+.interests-wrapper, .p1-wrapper, .p3-wrapper, .about-wrapper  {
   background: $background-one;
 }
 
@@ -83,7 +83,7 @@
 
 
 @media (min-width: 768px){
-  .contact-wrapper, .about-wrapper, .skills-wrapper, .projects-wrapper, .interests-wrapper {
+  .contact-wrapper, .about-wrapper, .skills-wrapper, .projects-wrapper, .interests-wrapper,  .p1-wrapper, .p2-wrapper, .p3-wrapper, .p4-wrapper {
     height: calc(100vh - 40px);
   }
   .skills-image{
@@ -105,19 +105,12 @@
   }
   }
 
-  .projects-intro {
-    min-width: calc(100vw*0.6);
-    min-height: calc(100vh*0.6);
-    display: flex;
-    justify-content: center;
+  .p1-container, .p2-container, .p3-container, .p4-container {
+    h5 {
+      padding: 5px;
   }
-    .carousel-inner {
-      width: calc(100vw*0.8);
-      .carousel-indicators {
-        padding: 30px;
-      }
+  img{
+    border-radius: 25px;
   }
-  h3 {
-    margin-top: 30px;
   }
 }

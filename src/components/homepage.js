@@ -127,6 +127,45 @@ const Homepage = () => {
           </div>
         </div>
       </main>
+      <main className="p4-wrapper">
+        <div className="p4-container">
+          <h1 className="p4-title" > I Got There First </h1>
+          <div className="p4-intro">
+            <h5>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
+</h5>
+          </div>
+        </div>
+      </main>
+      <main className="p3-wrapper">
+        <div className="p3-container">
+          <h1 className="p3-title" > p3 </h1>
+          <div className="p3-intro">
+            <h5>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
+</h5>
+          </div>
+        </div>
+      </main>
+      <main className="p2-wrapper">
+        <div className="p2-container">
+          <h1 className="p2-title" > p2 </h1>
+          <div className="p2-intro">
+            <h5>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
+</h5>
+          </div>
+        </div>
+      </main>
+      <main className="p1-wrapper">
+        <div className="p1-container">
+        <h1> Minesweeper</h1>
+        <h5 className="timeframe"> Week 4, 1 Week, Solo Project </h5>
+        <h5> Read me, GitHub and link placeholder. I'll have icons</h5>
+        <h5> Wins 🥇 </h5>
+        <h5> I added my stretch targets - A reset button, a timer, flags and difficulty levels. </h5> 
+        <h5> Main Takeaway 🎓 </h5>
+        <h5> Keep it simple! </h5>   
+        <img src={Minesweeeper} alt="Minesweeper"/>
+        </div>
+      </main>
       <div className='break' id="projects-break"></div>
       <main className="projects-wrapper">
         <div className="projects-container">
@@ -139,15 +178,12 @@ const Homepage = () => {
               </Carousel.Item>
               <Carousel.Item>
               <div className="d-block w-100" data-bs-interval="false"> <img src={Recipes} alt="Recipes"/> </div> 
-                  <h3>Recipes</h3>
               </Carousel.Item>
               <Carousel.Item>
               <div className="d-block w-100" data-bs-interval="false"> <img src={WatchIt} alt="WatchIt"/> </div> 
-                  <h3>WatchIt</h3>
               </Carousel.Item>
               <Carousel.Item>
               <div className="d-block w-100" data-bs-interval="false"> <img src={Project4} alt="I Got There First"/> </div> 
-                  <h3>I Got There First</h3>
               </Carousel.Item>
             </Carousel>
           </div>
