@@ -23,6 +23,11 @@ import React from 'react';
 import Minesweeeper from '../images/minesweeper.png'
 import Recipes from '../images/recipes.png'
 import WatchIt from '../images/watchit.png'
+import Project4 from '../images/project4.png'
+import LinkedIn from '../images/LinkedIn.png'
+import EmailMe from '../images/EmailMe.png'
+import Fudge from '../images/Fudge.png'
+import Quiz from '../images/Quiz.png'
 import 'bootstrap/dist/css/bootstrap.css';
 
 const images = [
@@ -112,49 +117,43 @@ const images = [
 const Homepage = () => {
   return (
     <>
+      <div className="break" id="about-break"></div>
        <main className="about-wrapper">
         <div className="about-container">
           <h1 className="about-title" > About </h1>
           <div className="about-intro">
-            <h4>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
-</h4>
+            <h5>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
+</h5>
           </div>
         </div>
       </main>
-      <div className='break'></div>
+      <div className='break' id="projects-break"></div>
       <main className="projects-wrapper">
         <div className="projects-container">
           <h1 className="projects-title" > Projects </h1>
           <div className="projects-intro">
-            <div style={{ display: 'block', width: 700, padding: 30 }}>
-                  <Carousel interval={null}>
-                    <Carousel.Item>
-                      <div className="d-block w-100" data-bs-interval="false"> <img src={Minesweeeper} alt="Minesweeper"/> </div> 
-                      <Carousel.Caption>
-                        <h3>Label for first slide</h3>
-                        <p>Sample Text for Image One</p>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                    <div className="d-block w-100" data-bs-interval="false"> <img src={Recipes} alt="Recipes"/> </div> 
-                      <Carousel.Caption>
-                        <h3>Label for second slide</h3>
-                        <p>Sample Text for Image Two</p>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                    <div className="d-block w-100" data-bs-interval="false"> <img src={WatchIt} alt="WatchIt"/> </div> 
-                      <Carousel.Caption>
-                        <h3>Label for third slide</h3>
-                        <p>Sample Text for Image Three</p>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                  </Carousel>
-                </div>
+            <Carousel interval={null}>
+              <Carousel.Item>
+              <div className="d-block w-100" data-bs-interval="false"> <img src={Minesweeeper} alt="Minesweeper"/> </div> 
+                  <h3>Minesweeeper</h3>
+              </Carousel.Item>
+              <Carousel.Item>
+              <div className="d-block w-100" data-bs-interval="false"> <img src={Recipes} alt="Recipes"/> </div> 
+                  <h3>Recipes</h3>
+              </Carousel.Item>
+              <Carousel.Item>
+              <div className="d-block w-100" data-bs-interval="false"> <img src={WatchIt} alt="WatchIt"/> </div> 
+                  <h3>WatchIt</h3>
+              </Carousel.Item>
+              <Carousel.Item>
+              <div className="d-block w-100" data-bs-interval="false"> <img src={Project4} alt="I Got There First"/> </div> 
+                  <h3>I Got There First</h3>
+              </Carousel.Item>
+            </Carousel>
           </div>
         </div>
       </main>
-      <div className='break'></div>
+      <div className='break' id="skills-break"></div>
       <main className="skills-wrapper">
         <div className="skills-container">
           <h1 className="skills-title" > Skills </h1>
@@ -168,13 +167,40 @@ const Homepage = () => {
           </div>
         </div>
       </main>
-      <div className='break'></div>
-      <main className="head-wrapper">
-        <div className="head-container">
-          <h1 className="head-title" > Header </h1>
-          <div className="head-intro">
-          <h4>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
-</h4>
+      <div className='break' id="interests-break"></div>
+      <main className="interests-wrapper">
+        <div className="interests-container">
+          <h1 className="interests-title" > Interests </h1>
+          <div className="interests-intro">
+          <div className="interests-text">
+            <h4> Food </h4>
+            <h5> I am on a one man mission to find the best value, hidden gems across London. I have also worked on market stalls supporting start up confectionary business Artizan Fudge. </h5>
+            <h4> Simpsons </h4>
+            <h5> As a huge Simpsons fan, I ran a series of Simpsons themed pub quizzes for hundreds of attendees. This included finding a venue, marketing, selling tickets on eventbrite and writing the quiz! </h5>
+            <h4> Podcasts </h4>
+            <h5> In my previous job, long commutes led to a love of podcasts. In particular, I listen to current affairs and comedy ones. The show I am currently listening to is <a href="https://www.vox.com/land-of-the-giants-podcast" target="_blank" rel="noreferrer">Land of the Giants,</a> the story of how FAANG grew to be the companies they are today. </h5>
+          </div>
+          <div className="interests-images">
+          <img src = {Fudge} alt = "Fudge"/>
+          <img src = {Quiz} alt = "Quiz"/>
+          </div>
+          </div>
+        </div>
+      </main>
+      <div className='break' id="contact-break"></div>
+      <main className="contact-wrapper">
+        <div className="contact-container">
+          <h1 className="contact-title" > Come Say Hi ! </h1>
+          <div className="contact-intro">
+          <a href="https://www.linkedin.com/in/jrose117/" target="_blank" rel="noreferrer"> 
+            <img src = {LinkedIn} alt = "LinkedIn"/>
+          </a>
+          <a href="https://github.com/JRose117/" target="_blank" rel="noreferrer"> 
+            <img src = {GitHub} alt = "GitHub"/>
+          </a>
+          <a href="mailto:joerose3546@gmail.com?subject=Hi Joe!" target="_blank" rel="noreferrer">
+            <img src = {EmailMe} alt = "Email Me"/>
+          </a>
           </div>
         </div>
       </main>

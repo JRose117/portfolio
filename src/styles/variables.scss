@@ -1,6 +1,9 @@
-$background-one: lightgrey;
-$background-two: grey;
+$background-one: linear-gradient(110deg, #013A6B 55%, #004E95 55%);
+$background-two: linear-gradient(110deg, #004E95 55%, #013A6B 55%);
+// $background-two: linear-gradient(110deg, #6974cf 55%, #45498e 55%);
 $colour-break: #0a0a0a;
-$navbar: #f2f6f5;
+$text-color-one: #E7DFDD;
+$button-color: #4717F6;
+$navbar: #0a0a0a;
 
 $box-shadow: 0px 2px 10px rgba(3,4,1,0.4);

@@ -6,7 +6,7 @@ const Projects = () => {
       <div className="project-single-container-left">
         <h1> Minesweeper</h1>
         <img src={Minesweeeper} alt="Minesweeper"/>
-        <h4> Our Brief was to create a grid based game. I chose Minesweeper because it was the most difficult option available in the brief. 
+        <h4> Our Brief was to create a grid based game. I chose Minesweeper because it was the most difficult option available. 
  </h4>
       </div>
       <div className="project-single-container-right">

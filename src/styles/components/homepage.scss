@@ -1,11 +1,12 @@
-.head-wrapper, .about-wrapper, .skills-wrapper, .projects-wrapper {
+.contact-wrapper, .about-wrapper, .skills-wrapper, .projects-wrapper, .interests-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 500px;
+  background: $background-two;
 }
 
-.head-container, .about-container, .skills-container, .projects-container {
+.contact-container, .about-container, .skills-container, .projects-container, .interests-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -17,13 +18,13 @@
   }
 }
 
-.head-title, .about-title, .skills-title, .projects-title {
+.contact-title, .about-title, .skills-title, .projects-title, .interests-title {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.head-wrapper, .head-container, .head-title, .projects-container, .projects-title, .projects-wrapper {
-  background: $background-two;
+.interests-wrapper, .projects-wrapper {
+  background: $background-one;
 }
 
 .h4 {
@@ -49,8 +50,40 @@
   margin: 0 7px;
 }
 
+.break {
+  display: block;
+  position: relative;
+  top: -40px;
+  visibility: hidden;
+}
+
+.contact-intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.interests-intro {
+  display: flex;
+  align-items: center;
+  .interests-text {
+    padding: 15px;
+}
+.interests-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    border-radius: 25px;
+    max-width: 60%;
+    padding: 5px;
+}
+}
+}
+
+
 @media (min-width: 768px){
-  .head-wrapper, .about-wrapper, .skills-wrapper, .projects-wrapper {
+  .contact-wrapper, .about-wrapper, .skills-wrapper, .projects-wrapper, .interests-wrapper {
     height: calc(100vh - 40px);
   }
   .skills-image{
@@ -62,5 +95,29 @@
     margin: 0 auto;
     display: flex;
   }
+  .contact-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: calc(100vw*0.2);
+    img {
+      width: calc(100vw*0.04);
+  }
   }
 
+  .projects-intro {
+    min-width: calc(100vw*0.6);
+    min-height: calc(100vh*0.6);
+    display: flex;
+    justify-content: center;
+  }
+    .carousel-inner {
+      width: calc(100vw*0.8);
+      .carousel-indicators {
+        padding: 30px;
+      }
+  }
+  h3 {
+    margin-top: 30px;
+  }
+}

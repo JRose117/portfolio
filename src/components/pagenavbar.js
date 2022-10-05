@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
@@ -11,12 +10,14 @@ const PageNavbar = () => {
         <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav'>
           <div className='nav-home'>
-            <Nav.Link as={Link} to='/'> Joe Rose </Nav.Link>
+            <Nav.Link href="#about-break"> Joe Rose </Nav.Link>
           </div>
           <div className='nav-other'>
-            <Nav.Link as={Link} to='/Projects'> LinkedIn </Nav.Link>
-            <Nav.Link as={Link} to='/Projects'> GitHub </Nav.Link>
-            <Nav.Link as={Link} to='/Projects'> Email </Nav.Link>
+            <Nav.Link href="#about-break"> About </Nav.Link>
+            <Nav.Link href="#projects-break"> Projects </Nav.Link>
+            <Nav.Link href="#skills-break"> Skills </Nav.Link>
+            <Nav.Link href="#interests-break"> Interests </Nav.Link>
+            <Nav.Link href="#contact-break"> Contact </Nav.Link>
           </div>
         </Navbar.Collapse>
       </Container>
