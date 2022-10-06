@@ -5,12 +5,12 @@ import Container from 'react-bootstrap/Container'
 
 const PageNavbar = () => {
   return (
-    <Navbar expand='md' sticky='top'>
+    <Navbar expand='md' sticky='top' variant="dark" >
       <Container as='section'>
         <Navbar.Toggle aria-controls='basic-navbar-nav'></Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav'>
           <div className='nav-home'>
-            <Nav.Link href="#about-break"> Joe Rose </Nav.Link>
+            <Nav.Link href="#about-break">  Joe Rose </Nav.Link>
           </div>
           <div className='nav-other'>
             <Nav.Link href="#about-break"> About </Nav.Link>

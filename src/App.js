@@ -2,10 +2,11 @@
 // import Contact from './components/contact'
 import Homepage from './components/homepage'
 import PageNavbar from './components/pagenavbar'
-import Projects from './components/projects'
 // import Skills from './components/skills'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import NotFound from './components/NotFound'
+// import PageFooter from './components/PageFooter'
 
 const App = () => {
   return (
@@ -14,9 +15,10 @@ const App = () => {
         <BrowserRouter>
           <PageNavbar/>
           <Routes>
-            <Route path="/" element={<Homepage/>}></Route>
-            <Route path="/Projects" element={<Projects/>}></Route>
+            <Route path="/" element={<Homepage/>}/>
+            <Route path="*" element={<NotFound/>}/>
           </Routes>
+          {/* <PageFooter/> */}
         </BrowserRouter>
       </div>
     </>

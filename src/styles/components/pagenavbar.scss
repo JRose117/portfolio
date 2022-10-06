@@ -1,10 +1,10 @@
 .navbar{
   box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
-  background-color: $text-color-one;
+  background-color: black;
   .nav-link, span{
     margin-left: 10px;
     cursor: pointer;
-    color: navy;
+    color: white;
     text-shadow: none;
   }
 }
@@ -13,6 +13,13 @@
   display: flex;
   flex-direction: column;
 }
+.nav-home{
+  display: none;
+}
+
+.navbar-toggler:focus {
+  color: white;
+}   
 
 @media (min-width: 768px){
 .navbar-expand-md .navbar-collapse {
@@ -23,6 +30,9 @@
 .nav-other{
   display: flex;
   flex-direction: row;
+}
+.nav-home{
+  display: unset;
 }
 }
 

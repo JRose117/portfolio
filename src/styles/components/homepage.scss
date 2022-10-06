@@ -12,8 +12,8 @@
   flex-direction: column;
   align-items: center;
   max-width: 1000px;
-  min-height: 500px;
-  h1,h3{
+  min-height: calc(100vh - 40px);
+    h1,h3{
     text-align: center;
   }
 }
@@ -27,6 +27,48 @@
   background: $background-one;
 }
 
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 250px;
+    border-radius: 30px;
+}
+h5 {
+  padding: 20px;
+}
+}
+
+.project-detail-top, .project-detail-bottom {
+  display: flex;
+}
+
+.project-detail {
+width: calc(40vw);
+border: solid 1px black;
+border-radius: 5px;
+padding: 5px;
+margin: 5px;
+h2, h3, h5{
+  padding:5px;
+  font-size: 0.7rem;
+}
+h2{
+  text-decoration: underline;
+}
+}
+
+
+.carousel-item{
+  img {
+    width: calc(90vw);
+    border-radius: 15px;
+}.carousel-caption{
+  display: none;
+}
+}
+
 .h4 {
   font-size: 0.2rem;
 }
@@ -38,7 +80,7 @@
 .skills-intro {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   align-items: center;
 }
@@ -61,10 +103,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  flex-direction: column;
+  img{
+    width:50px;
+    margin: 30px 0;
+  }
 }
 
 .interests-intro {
   display: flex;
+  flex-direction: column;
   align-items: center;
   .interests-text {
     padding: 15px;
@@ -82,6 +130,17 @@
 }
 
 @media (min-width: 768px){
+
+.projects-container{
+  a.nav-link {
+    text-decoration: underline;
+}
+}
+
+//   .footer {
+//     display: none;
+// }
+
   .contact-wrapper, .about-wrapper, .skills-wrapper, .projects-wrapper, .interests-wrapper,  .projects-detail-wrapper {
     height: calc(100vh - 40px);
     min-height: 700px;
@@ -90,6 +149,20 @@
     width: calc(100vw*0.08);
   }
 
+  .about-intro{
+    display:flex;
+    align-items: center;
+    img {
+      width: 350px;
+      border-radius: 70px;
+      height: 350px;
+      padding: 30px;
+  }
+  h5 {
+    padding: 15px;
+    font-size: 1rem;
+  }
+  }
   img {
     width: 80%;
     margin: 0 auto;
@@ -98,6 +171,7 @@
   .contact-intro {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     width: calc(100vw*0.2);
     img {
@@ -130,9 +204,17 @@
       color: black;
       text-shadow: none;
     }
+    .carousel-caption{
+      display: unset;
+    }
     img {
       border-radius: 15px;
+      width: calc(70vw);
     }
+}
+
+.interests-intro{
+  flex-direction: row;
 }
 }
 
@@ -145,5 +227,13 @@
       padding:5px;
       // font-size: 0.8rem;
     }
+}
+}
+
+@media (max-height:650px){
+  .about-intro{
+    h5{
+    font-size:1rem;
+  }
 }
 }

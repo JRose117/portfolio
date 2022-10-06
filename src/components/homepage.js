@@ -20,6 +20,7 @@ import VSCode from '../images/VSCode.png'
 import Yarn from '../images/Yarn.png'
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react';
+import Me from '../images/Me.jpeg';
 import Minesweeeper from '../images/minesweeper.png'
 import Recipes from '../images/recipes.png'
 import WatchIt from '../images/watchit.png'
@@ -28,6 +29,7 @@ import LinkedIn from '../images/LinkedIn.png'
 import EmailMe from '../images/EmailMe.png'
 import Fudge from '../images/Fudge.png'
 import Quiz from '../images/Quiz.png'
+import Nav from 'react-bootstrap/Nav'
 import 'bootstrap/dist/css/bootstrap.css';
 
 const images = [
@@ -122,6 +124,7 @@ const Homepage = () => {
         <div className="about-container">
           <h1 className="about-title" > About </h1>
           <div className="about-intro">
+            <img src = {Me} alt = "Joe"/>
             <h5>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
 </h5>
           </div>
@@ -131,6 +134,7 @@ const Homepage = () => {
       <main className="projects-wrapper">
         <div className="projects-container">
           <h1 className="projects-title" > Projects </h1>
+          <Nav.Link href="#projects-detail-break"> Click Me For More Read Mes, Deployment and GitHub Links </Nav.Link>
           <div className="projects-intro">
             <Carousel interval={null}>
               <Carousel.Item>
@@ -170,7 +174,7 @@ const Homepage = () => {
             <h5> Week 11, Solo, 1 Week</h5>
             <h3> Placeholder for icons to readme, github and link</h3>
             <h5> Wins 🥇 </h5>
-            <h5> asdfasdfsd </h5>
+            <h5> I got to play around and experiment a lot. </h5>
             <h5> Main Takeaway 🎓 </h5>
             <h5> New languages are nothing to be scared of. Now I've learnt the concepts, I can't wait to learn more!</h5>
           </div>
