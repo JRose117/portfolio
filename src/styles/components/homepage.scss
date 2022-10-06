@@ -1,4 +1,4 @@
-.contact-wrapper, .about-wrapper, .skills-wrapper, .interests-wrapper, .p1-wrapper, .p2-wrapper, .p3-wrapper, .p4-wrapper {
+.contact-wrapper, .about-wrapper, .skills-wrapper, .interests-wrapper, .projects-wrapper, .projects-detail-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   background: $background-two;
 }
 
-.contact-container, .about-container, .skills-container, .interests-container, .p1-container, .p2-container, .p3-container, .p4-container {
+.contact-container, .about-container, .skills-container, .interests-container, .projects-container, .projects-detail-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -18,12 +18,12 @@
   }
 }
 
-.contact-title, .about-title, .skills-title, .interests-title, .p1-title, .p2-title, .p3-title, .p4-title {
+.contact-title, .about-title, .skills-title, .interests-title, .projects-detail-title, .projects-title {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.interests-wrapper, .p1-wrapper, .p3-wrapper, .about-wrapper  {
+.interests-wrapper, .projects-detail-wrapper, .about-wrapper  {
   background: $background-one;
 }
 
@@ -81,10 +81,10 @@
 }
 }
 
-
 @media (min-width: 768px){
-  .contact-wrapper, .about-wrapper, .skills-wrapper, .projects-wrapper, .interests-wrapper,  .p1-wrapper, .p2-wrapper, .p3-wrapper, .p4-wrapper {
+  .contact-wrapper, .about-wrapper, .skills-wrapper, .projects-wrapper, .interests-wrapper,  .projects-detail-wrapper {
     height: calc(100vh - 40px);
+    min-height: 700px;
   }
   .skills-image{
     width: calc(100vw*0.08);
@@ -105,12 +105,45 @@
   }
   }
 
-  .p1-container, .p2-container, .p3-container, .p4-container {
-    h5 {
-      padding: 5px;
+.project-detail-top, .project-detail-bottom {
+    display: flex;
+}
+
+.project-detail {
+  width: calc(45vw);
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  h2, h3, h5{
+    padding:5px;
+    font-size: 1rem;
   }
-  img{
-    border-radius: 25px;
+  h2{
+    text-decoration: underline;
   }
   }
+  
+  .projects-intro {
+    h3 {
+      background: rgba(204, 204, 204, 0.5);
+      color: black;
+      text-shadow: none;
+    }
+    img {
+      border-radius: 15px;
+    }
+}
+}
+
+@media (max-width:1000px){
+  .project-detail {
+    width: calc(48vw);
+    padding: 0px;
+    margin: 1px;
+    h2, h3, h5{
+      padding:5px;
+      // font-size: 0.8rem;
+    }
+}
 }

@@ -127,45 +127,6 @@ const Homepage = () => {
           </div>
         </div>
       </main>
-      <main className="p4-wrapper">
-        <div className="p4-container">
-          <h1 className="p4-title" > I Got There First </h1>
-          <div className="p4-intro">
-            <h5>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
-</h5>
-          </div>
-        </div>
-      </main>
-      <main className="p3-wrapper">
-        <div className="p3-container">
-          <h1 className="p3-title" > p3 </h1>
-          <div className="p3-intro">
-            <h5>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
-</h5>
-          </div>
-        </div>
-      </main>
-      <main className="p2-wrapper">
-        <div className="p2-container">
-          <h1 className="p2-title" > p2 </h1>
-          <div className="p2-intro">
-            <h5>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
-</h5>
-          </div>
-        </div>
-      </main>
-      <main className="p1-wrapper">
-        <div className="p1-container">
-        <h1> Minesweeper</h1>
-        <h5 className="timeframe"> Week 4, 1 Week, Solo Project </h5>
-        <h5> Read me, GitHub and link placeholder. I'll have icons</h5>
-        <h5> Wins 🥇 </h5>
-        <h5> I added my stretch targets - A reset button, a timer, flags and difficulty levels. </h5> 
-        <h5> Main Takeaway 🎓 </h5>
-        <h5> Keep it simple! </h5>   
-        <img src={Minesweeeper} alt="Minesweeper"/>
-        </div>
-      </main>
       <div className='break' id="projects-break"></div>
       <main className="projects-wrapper">
         <div className="projects-container">
@@ -174,18 +135,75 @@ const Homepage = () => {
             <Carousel interval={null}>
               <Carousel.Item>
               <div className="d-block w-100" data-bs-interval="false"> <img src={Minesweeeper} alt="Minesweeper"/> </div> 
+                <Carousel.Caption>
                   <h3>Minesweeeper</h3>
+                </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
               <div className="d-block w-100" data-bs-interval="false"> <img src={Recipes} alt="Recipes"/> </div> 
+                <Carousel.Caption>
+                  <h3>Recipes</h3>
+                </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
               <div className="d-block w-100" data-bs-interval="false"> <img src={WatchIt} alt="WatchIt"/> </div> 
+                <Carousel.Caption>
+                  <h3>WatchIt</h3>
+                </Carousel.Caption>              
               </Carousel.Item>
               <Carousel.Item>
               <div className="d-block w-100" data-bs-interval="false"> <img src={Project4} alt="I Got There First"/> </div> 
+                <Carousel.Caption>
+                  <h3>I Got There First</h3>
+                </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
+          </div>
+        </div>
+      </main>
+      <div className="break" id="projects-detail-break"></div>
+       <main className="projects-detail-wrapper">
+        <div className="projects-detail-container">
+          <div className="project-detail-top">
+          <div className="project-detail">
+            <h2> I Got There First </h2>
+            <h5> Week 11, Solo, 1 Week</h5>
+            <h3> Placeholder for icons to readme, github and link</h3>
+            <h5> Wins 🥇 </h5>
+            <h5> asdfasdfsd </h5>
+            <h5> Main Takeaway 🎓 </h5>
+            <h5> New languages are nothing to be scared of. Now I've learnt the concepts, I can't wait to learn more!</h5>
+          </div>
+          <div className="project-detail">
+            <h2> WatchIt </h2>
+            <h5> Week 9, Group, 1 Week </h5>
+            <h3> Placeholder for icons to readme, github and link</h3>
+            <h5> Wins 🥇 </h5>
+            <h5> This was my first time creating a back-end, and we used it to solve a pain point. </h5>
+            <h5> Main Takeaway 🎓 </h5>
+            <h5> I loved collaborating with others on this project. I did not love the consequences of editing when on the main branch 😫  </h5>
+          </div>
+          </div>
+          <div className="project-detail-bottom">
+          <div className="project-detail">
+            <h2> Recipes </h2>
+            <h5> Week 6, Group, 2 Days </h5>
+            <h3> Placeholder for icons to readme, github and link</h3>
+            <h5> Wins 🥇 </h5>
+            <h5> Applied logic to dynamically display ingredients and embed YouTube videos.</h5>
+            <h5> Main Takeaway 🎓 </h5>
+            <h5> Just because a website is easy to use, does not mean it is easy to code. </h5>
+          </div>
+          <div className="project-detail">
+            <h2> Minesweeeper </h2>
+            <h5> Week 4, Solo, 1 Week </h5>
+            <h3> Placeholder for icons to readme, github and link</h3>
+            <h5> Wins 🥇 </h5>
+            <h5> I added my stretch targets - A reset button, a timer, flags and difficulty levels. 
+ </h5>
+            <h5> Main Takeaway 🎓 </h5>
+            <h5> Keep It Simple! </h5>
+          </div>
           </div>
         </div>
       </main>
