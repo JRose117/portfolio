@@ -1,34 +1,34 @@
-import Bootstrap from '../images/Bootstrap.png'
-import CSS from '../images/CSS3.png'
-import Django from '../images/Django.png'
-import Express from '../images/Express.png'
-import GitHub from '../images/Github.png'
-import Heroku from '../images/Heroku.png'
-import HTML5 from '../images/HTML5.png'
-import Insomnia from '../images/Insomnia.png'
-import JavaScript from '../images/JavaScript.png'
-import MongoDB from '../images/MongoDB.png'
-import Mongoose from '../images/Mongoose.png'
-import Netlify from '../images/Netlify.png'
-import Nodejs from '../images/Nodejs.png'
-import npm from '../images/npm.png'
-import Postgresql from '../images/Postgresql.png'
-import Python from '../images/Python.png'
-import ReactIcon from '../images/reactlogo.png'
-import SASS from '../images/SASS.png'
-import VSCode from '../images/VSCode.png'
-import Yarn from '../images/Yarn.png'
+import Bootstrap from '../images/skills/Bootstrap.png'
+import CSS from '../images/skills/CSS3.png'
+import Django from '../images/skills/Django.png'
+import Express from '../images/skills/Express.png'
+import GitHub from '../images/skills/Github.png'
+import Heroku from '../images/skills/Heroku.png'
+import HTML5 from '../images/skills/HTML5.png'
+import Insomnia from '../images/skills/Insomnia.png'
+import JavaScript from '../images/skills/JavaScript.png'
+import MongoDB from '../images/skills/MongoDB.png'
+import Mongoose from '../images/skills/Mongoose.png'
+import Netlify from '../images/skills/Netlify.png'
+import Nodejs from '../images/skills/Nodejs.png'
+import npm from '../images/skills/npm.png'
+import Postgresql from '../images/skills/Postgresql.png'
+import Python from '../images/skills/Python.png'
+import ReactIcon from '../images/skills/reactlogo.png'
+import SASS from '../images/skills/SASS.png'
+import VSCode from '../images/skills/VSCode.png'
+import Yarn from '../images/skills/Yarn.png'
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react';
 import Me from '../images/Me.jpeg';
-import Minesweeeper from '../images/minesweeper.png'
-import Recipes from '../images/recipes.png'
-import WatchIt from '../images/watchit.png'
-import Project4 from '../images/project4.png'
-import LinkedIn from '../images/LinkedIn.png'
-import EmailMe from '../images/EmailMe.png'
-import Fudge from '../images/Fudge.png'
-import Quiz from '../images/Quiz.png'
+import Minesweeeper from '../images/projects/minesweeper.png'
+import Recipes from '../images/projects/recipes.png'
+import WatchIt from '../images/projects/watchit.png'
+import Project4 from '../images/projects/project4.png'
+import LinkedIn from '../images/contact/LinkedIn.png'
+import EmailMe from '../images/contact/EmailMe.png'
+import Fudge from '../images/interests/Fudge.png'
+import Quiz from '../images/interests/Quiz.png'
 import Nav from 'react-bootstrap/Nav'
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -219,7 +219,7 @@ const Homepage = () => {
           {images.map((image, index) => (
             <div className='Image' key={index}>
               <img className = 'skills-image' src={image.imageSrc} alt={image.name} />
-              <div className = 'skills-name'>{image.name}</div>
+              {/* <div className = 'skills-name'>{image.name}</div> */}
             </div>
           ))}
           </div>
