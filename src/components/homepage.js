@@ -1,6 +1,7 @@
 import Bootstrap from '../images/skills/Bootstrap.png'
 import CSS from '../images/skills/CSS3.png'
 import Django from '../images/skills/Django.png'
+import Excalidraw from '../images/skills/Excalidraw.png'
 import Express from '../images/skills/Express.png'
 import GitHub from '../images/skills/Github.png'
 import Heroku from '../images/skills/Heroku.png'
@@ -16,6 +17,9 @@ import Postgresql from '../images/skills/Postgresql.png'
 import Python from '../images/skills/Python.png'
 import ReactIcon from '../images/skills/reactlogo.png'
 import SASS from '../images/skills/SASS.png'
+import Slack from '../images/skills/Slack.png'
+import TablePlus from '../images/skills/TablePlus.png'
+import Trello from '../images/skills/Trello.png'
 import VSCode from '../images/skills/VSCode.png'
 import Yarn from '../images/skills/Yarn.png'
 import Carousel from 'react-bootstrap/Carousel';
@@ -44,6 +48,10 @@ const images = [
   {
     name: "Django",
     imageSrc: Django,
+  },
+  {
+    name: "Excalidraw",
+    imageSrc: Excalidraw,
   },
   {
     name: "Express",
@@ -104,6 +112,18 @@ const images = [
   {
     name: "Sass",
     imageSrc: SASS,
+  },
+  {
+    name: "Slack",
+    imageSrc: Slack,
+  },
+  {
+    name: "TablePlus",
+    imageSrc: TablePlus,
+  },
+  {
+    name: "Trello",
+    imageSrc: Trello,
   },
   {
     name: "VSCode",

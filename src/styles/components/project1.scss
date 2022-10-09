@@ -1,0 +1,31 @@
+
+
+* {
+  color: black;
+}
+
+.project-single-left {
+  display: flex;
+  img {
+    width: calc(40vw);
+    margin: 30px;
+  }
+  h2 {
+    margin: 30px 30px 10px 30px;
+    text-align: center;
+  }
+  h5 {
+    text-align: center;
+  }
+}
+.project-single-right{
+  .tech-used {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+    }
+  }}
