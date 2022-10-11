@@ -17,7 +17,7 @@ const App = () => {
           <PageNavbar/>
           <Routes>
             <Route path="/" element={<Homepage/>}/>
-            <Route path="*" element={<NotFound/>}/>
+            <Route path='*' element={<NotFound/>}/>
             <Route path="/a" element={<Project1/>}/>
           </Routes>
           {/* <PageFooter/> */}

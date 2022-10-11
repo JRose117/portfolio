@@ -1,45 +1,52 @@
-import Bootstrap from '../images/skills/Bootstrap.png'
-import CSS from '../images/skills/CSS3.png'
-import Django from '../images/skills/Django.png'
-import Excalidraw from '../images/skills/Excalidraw.png'
-import Express from '../images/skills/Express.png'
-import GitHub from '../images/skills/Github.png'
-import Heroku from '../images/skills/Heroku.png'
-import HTML5 from '../images/skills/HTML5.png'
-import Insomnia from '../images/skills/Insomnia.png'
-import JavaScript from '../images/skills/JavaScript.png'
-import MongoDB from '../images/skills/MongoDB.png'
-import Mongoose from '../images/skills/Mongoose.png'
-import Netlify from '../images/skills/Netlify.png'
-import Nodejs from '../images/skills/Nodejs.png'
-import npm from '../images/skills/npm.png'
-import Postgresql from '../images/skills/Postgresql.png'
-import Python from '../images/skills/Python.png'
-import ReactIcon from '../images/skills/reactlogo.png'
-import SASS from '../images/skills/SASS.png'
-import Slack from '../images/skills/Slack.png'
-import TablePlus from '../images/skills/TablePlus.png'
-import Trello from '../images/skills/Trello.png'
-import VSCode from '../images/skills/VSCode.png'
-import Yarn from '../images/skills/Yarn.png'
-import Carousel from 'react-bootstrap/Carousel';
+import Bootstrap from '../images/skills/Bootstrap.png';
+import Cloudinary from '../images/skills/Cloudinary.png';
+import CSS from '../images/skills/CSS3.png';
+import Django from '../images/skills/Django.png';
+import Excalidraw from '../images/skills/Excalidraw.png';
+import Express from '../images/skills/Express.png';
+import GitHub from '../images/skills/Github.png';
+import Heroku from '../images/skills/Heroku.png';
+import HTML5 from '../images/skills/HTML5.png';
+import Insomnia from '../images/skills/Insomnia.png';
+import JavaScript from '../images/skills/JavaScript.png';
+import JSON from '../images/skills/JSON.png';
+import MongoDB from '../images/skills/MongoDB.png';
+import Mongoose from '../images/skills/Mongoose.png';
+import Netlify from '../images/skills/Netlify.png';
+import Nodejs from '../images/skills/Nodejs.png';
+import Nodemon from '../images/skills/Nodemon.png';
+import npm from '../images/skills/npm.png';
+import Postgresql from '../images/skills/Postgresql.png';
+import Python from '../images/skills/Python.png';
+import ReactIcon from '../images/skills/reactlogo.png';
+import SASS from '../images/skills/SASS.png';
+import Slack from '../images/skills/Slack.png';
+import TablePlus from '../images/skills/TablePlus.png';
+import Trello from '../images/skills/Trello.png';
+import VSCode from '../images/skills/VSCode.png';
+import Yarn from '../images/skills/Yarn.png';
+// import Carousel from 'react-bootstrap/Carousel';
 import React from 'react';
 import Me from '../images/Me.jpeg';
-import Minesweeeper from '../images/projects/minesweeper.png'
-import Recipes from '../images/projects/recipes.png'
-import WatchIt from '../images/projects/watchit.png'
-import Project4 from '../images/projects/project4.png'
-import LinkedIn from '../images/contact/LinkedIn.png'
-import EmailMe from '../images/contact/EmailMe.png'
-import Fudge from '../images/interests/Fudge.png'
-import Quiz from '../images/interests/Quiz.png'
-import Nav from 'react-bootstrap/Nav'
+import Minesweeeper from '../images/projects/minesweeper.gif';
+import Recipes from '../images/projects/recipes.gif';
+import WatchIt from '../images/projects/watchit.gif';
+import Project4 from '../images/projects/project4.gif';
+import Chain from '../images/projects/Chain.png'
+import LinkedIn from '../images/contact/LinkedIn.png';
+import EmailMe from '../images/contact/EmailMe.png';
+import Fudge from '../images/interests/Fudge.png';
+import Quiz from '../images/interests/Quiz.png';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const images = [
   {
     name: "Bootstrap",
     imageSrc: Bootstrap,
+  },
+  {
+    name: "Cloudinary",
+    imageSrc: Cloudinary,
   },
   {
     name: "CSS",
@@ -78,6 +85,10 @@ const images = [
     imageSrc: JavaScript,
   },
   {
+    name: "JSON Web Token",
+    imageSrc: JSON,
+  },
+  {
     name: "MongoDB",
     imageSrc: MongoDB,
   },
@@ -92,6 +103,10 @@ const images = [
   {
     name: "Node.js",
     imageSrc: Nodejs,
+  },
+  {
+    name: "Nodemon",
+    imageSrc: Nodemon,
   },
   {
     name: "npm",
@@ -135,102 +150,191 @@ const images = [
   },
 ];
 
-
 const Homepage = () => {
   return (
     <>
       <div className="break" id="about-break"></div>
-       <main className="about-wrapper">
+      <main className="about-wrapper">
         <div className="about-container">
           <h1 className="about-title" > About </h1>
           <div className="about-intro">
             <img src = {Me} alt = "Joe"/>
-            <h5>When I was 21 years old, in my first year out of University, I took part in the intensive Teach First Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill which I was incredibly proud of. As a maths teacher I achieved incredible grades for my students and have since held leadership positions in school. <br></br><br></br>I have recently completed the General Assembly boot camp, where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering HTML, CSS, JavaScript, MERN and Python/ Django. Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
+            <h5>When I was 21 years old, in my first year out of University, I took part in the intensive <span className="about-bold">Teach First</span> Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill of which I am incredibly proud. As a Maths teacher I achieved incredible grades for my students and have since held <span className="about-bold">leadership</span> positions in school. <br></br><br></br>I have recently completed the <span className="about-bold">General Assembly Boot Camp,</span> where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering <span className="about-bold">HTML, CSS, JavaScript, MERN and Python/ Django.</span> Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
 </h5>
           </div>
         </div>
       </main>
-      <div className='break' id="projects-break"></div>
-      <main className="projects-wrapper">
-        <div className="projects-container">
-          <h1 className="projects-title" > Projects </h1>
-          <Nav.Link href="#projects-detail-break"> Click Me For More Read Mes, Deployment and GitHub Links </Nav.Link>
-          <div className="projects-intro">
-            <Carousel interval={null}>
-              <Carousel.Item>
-              <div className="d-block w-100" data-bs-interval="false"> <img src={Minesweeeper} alt="Minesweeper"/> </div> 
-                <Carousel.Caption>
-                  <h3>Minesweeeper</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-              <div className="d-block w-100" data-bs-interval="false"> <img src={Recipes} alt="Recipes"/> </div> 
-                <Carousel.Caption>
-                  <h3>Recipes</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-              <div className="d-block w-100" data-bs-interval="false"> <img src={WatchIt} alt="WatchIt"/> </div> 
-                <Carousel.Caption>
-                  <h3>WatchIt</h3>
-                </Carousel.Caption>              
-              </Carousel.Item>
-              <Carousel.Item>
-              <div className="d-block w-100" data-bs-interval="false"> <img src={Project4} alt="I Got There First"/> </div> 
-                <Carousel.Caption>
-                  <h3>I Got There First</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-          </div>
+      <div className="break" id="project4-break"></div>
+      <main className="projecta-detail-wrapper">
+        <div className="projecta-detail-container">
+            <div className="project-single-direction-a">
+              <div className="project-single-left-1">
+                <h2> Project 4 - I Got There First </h2>
+                <div className="deployment-links">
+                  <a href="https://i-got-there-first.herokuapp.com/" target="_blank" rel="noreferrer"> 
+                    <img className="deployment" src = {Chain} alt="Link to Website"/>
+                  </a>
+                  <a href="https://github.com/JRose117/sei-project-4" target="_blank" rel="noreferrer"> 
+                    <img className="deployment" src = {GitHub} alt="Link to GitHub"/>
+                  </a>
+                </div>
+                <h5> Week 11, Solo, 1 Week</h5>
+                <div className="project-image"><img src={Project4} alt="Project4"/></div>
+              </div>
+              <div className="project-single-right">
+              <div className ="tech-used">
+                <img src={Django} alt="Django"/>
+                <img src={Cloudinary} alt="Cloudinary"/>
+                <img src={Python} alt="Python"/>
+                <img src={HTML5} alt="HTML"/>
+                <img src={JavaScript} alt="JavaScript"/>
+                <img src={CSS} alt="CSS"/>
+                <img src={GitHub} alt="GitHub"/>
+                <img src={SASS} alt="SASS"/>
+                <img src={ReactIcon} alt="React"/>
+                <img src={Bootstrap} alt="Bootstrap"/>
+                <img src={Excalidraw} alt="Excalidraw"/>
+                <img src={TablePlus} alt="TablePlus"/>
+                <img src={Insomnia} alt="Insomnia"/>
+                <img src={Heroku} alt="Heroku"/>
+                <img src={Netlify} alt="Netlify"/>
+              </div>
+              <div className="project-reflections">
+                <h5> Wins 🥇 </h5>
+                <h6> I got to play around and experiment a lot. </h6>
+                <h5> Main Takeaway 🎓 </h5>
+                <h6> New languages are nothing to be scared of. Now I've learnt the concepts, I can't wait to learn more!</h6>
+            </div>
+            </div>
+            </div>
         </div>
-      </main>
-      <div className="break" id="projects-detail-break"></div>
-       <main className="projects-detail-wrapper">
-        <div className="projects-detail-container">
-          <div className="project-detail-top">
-          <div className="project-detail">
-            <h2> I Got There First </h2>
-            <h5> Week 11, Solo, 1 Week</h5>
-            <h3> Placeholder for icons to readme, github and link</h3>
-            <h5> Wins 🥇 </h5>
-            <h5> I got to play around and experiment a lot. </h5>
-            <h5> Main Takeaway 🎓 </h5>
-            <h5> New languages are nothing to be scared of. Now I've learnt the concepts, I can't wait to learn more!</h5>
-          </div>
-          <div className="project-detail">
-            <h2> WatchIt </h2>
-            <h5> Week 9, Group, 1 Week </h5>
-            <h3> Placeholder for icons to readme, github and link</h3>
-            <h5> Wins 🥇 </h5>
-            <h5> This was my first time creating a back-end, and we used it to solve a pain point. </h5>
-            <h5> Main Takeaway 🎓 </h5>
-            <h5> I loved collaborating with others on this project. I did not love the consequences of editing when on the main branch 😫  </h5>
-          </div>
-          </div>
-          <div className="project-detail-bottom">
-          <div className="project-detail">
-            <h2> Recipes </h2>
-            <h5> Week 6, Group, 2 Days </h5>
-            <h3> Placeholder for icons to readme, github and link</h3>
-            <h5> Wins 🥇 </h5>
-            <h5> Applied logic to dynamically display ingredients and embed YouTube videos.</h5>
-            <h5> Main Takeaway 🎓 </h5>
-            <h5> Just because a website is easy to use, does not mean it is easy to code. </h5>
-          </div>
-          <div className="project-detail">
-            <h2> Minesweeeper </h2>
-            <h5> Week 4, Solo, 1 Week </h5>
-            <h3> Placeholder for icons to readme, github and link</h3>
-            <h5> Wins 🥇 </h5>
-            <h5> I added my stretch targets - A reset button, a timer, flags and difficulty levels. 
- </h5>
-            <h5> Main Takeaway 🎓 </h5>
-            <h5> Keep It Simple! </h5>
-          </div>
-          </div>
+        </main>
+      <div className="break" id="project3-break"></div>
+      <main className="projectb-detail-wrapper">
+        <div className="projectb-detail-container">
+            <div className="project-single-direction-b">
+              <div className="project-single-left-1">
+                <h2> Project 3 - WatchIt </h2> 
+                <div className="deployment-links">
+                  <a href="https://sei-project3-moviematch.netlify.app/" target="_blank" rel="noreferrer"> 
+                    <img className="deployment" src = {Chain} alt="Link to Website"/>
+                  </a>
+                  <a href="https://github.com/JRose117/" target="_blank" rel="noreferrer"> 
+                    <img className="deployment" src = {GitHub} alt="Link to GitHub"/>
+                  </a>
+                </div>
+                <h5> Week 9, Group, 1 Week </h5>
+                <div className="project-image"><img src={WatchIt} alt="WatchIt"/></div>
+              </div>
+              <div className="project-single-right">
+              <div className ="tech-used">
+                <img src={Nodejs} alt="Nodejs"/>
+                <img src={MongoDB} alt="MongoDB"/>
+                <img src={Express} alt="HTML"/>
+                <img src={Mongoose} alt="Mongoose"/>
+                <img src={CSS} alt="CSS"/>
+                <img src={SASS} alt="SASS"/>
+                <img src={ReactIcon} alt="React"/>
+                <img src={Bootstrap} alt="Bootstrap"/>
+                <img src={Excalidraw} alt="Excalidraw"/>
+                <img src={VSCode} alt="VSCode"/>
+                <img src={GitHub} alt="GitHub"/>
+                <img src={Heroku} alt="Heroku"/>
+                <img src={Trello} alt="Trello"/>
+                <img src={Nodemon} alt="Nodemon"/>
+                <img src={JSON} alt="JSON Web Token"/>
+                <img src={Netlify} alt="Netlify"/>
+                <img src={Insomnia} alt="Insomnia"/>
+              </div>
+              <div className="project-reflections">
+                <div className="project-reflections">
+                  <h5> Wins 🥇 </h5>
+                  <h6> This was my first time creating a back-end, and we used it to solve a pain point. </h6>
+                  <h5> Main Takeaway 🎓 </h5>
+                  <h6> I loved collaborating with others on this project... I did not love the consequences of editing when on the main branch 😫</h6>
+              </div>
+              </div>
+            </div>
+            </div>
         </div>
-      </main>
+        </main>
+      <div className="break" id="project2-break"></div>
+      <main className="projecta-detail-wrapper">
+        <div className="projecta-detail-container">
+            <div className="project-single-direction-a">
+              <div className="project-single-left-1">
+                <h2> Project 2 - Recipes </h2>
+                <div className="deployment-links">
+                  <a href="https://react-recipe-app-2-day-project.netlify.app/" target="_blank" rel="noreferrer"> 
+                    <img className="deployment" src = {Chain} alt="Link to Website"/>
+                  </a>
+                  <a href="https://github.com/JRose117/SEI-Project-2" target="_blank" rel="noreferrer"> 
+                    <img className="deployment" src = {GitHub} alt="Link to GitHub"/>
+                  </a>
+                </div>
+                <h5> Week 6, Group , 2 Days</h5>
+                <div className="project-image"><img src={Recipes} alt="Recipes"/></div>
+              </div>
+              <div className="project-single-right">
+              <div className ="tech-used">
+                <img src={JavaScript} alt="JavaScript"/>
+                <img src={HTML5} alt="HTML"/>
+                <img src={CSS} alt="CSS"/>
+                <img src={SASS} alt="SASS"/>
+                <img src={ReactIcon} alt="React"/>
+                <img src={Bootstrap} alt="Bootstrap"/>
+                <img src={Excalidraw} alt="Excalidraw"/>
+                <img src={Heroku} alt="Heroku"/>
+                <img src={GitHub} alt="GitHub"/>
+                <img src={Netlify} alt="Netlify"/>
+                <img src={Insomnia} alt="Insomnia"/>
+                <img src={VSCode} alt="VSCode"/>
+              </div>
+              <div className="project-reflections">
+                <h5> Wins 🥇 </h5>
+                <h6> Applied logic to dynamically display ingredients and embed YouTube videos. </h6>
+                <h5> Main Takeaway 🎓 </h5>
+                <h6> Just because a website is easy to use, does not mean it is easy to code.</h6>
+            </div>
+            </div>
+            </div>
+        </div>
+        </main>
+        <div className="break" id="project1-break"></div>
+      <main className="projectb-detail-wrapper">
+        <div className="projectb-detail-container">
+            <div className="project-single-direction-b">
+              <div className="project-single-left-1">
+                <h2> Project 1 - Minesweeper </h2>
+                <div className="deployment-links">
+                  <a href="https://jrose117.github.io/project1/" target="_blank" rel="noreferrer"> 
+                    <img className="deployment" src = {Chain} alt="Link to Website"/>
+                  </a>
+                  <a href="https://github.com/JRose117/project1" target="_blank" rel="noreferrer"> 
+                    <img className="deployment" src = {GitHub} alt="Link to GitHub"/>
+                  </a>
+                </div>
+                <h5> Week 4, Solo, 1 Week</h5>
+                <div className="project-image"><img src={Minesweeeper} alt="Minesweeeper"/></div>
+              </div>
+              <div className="project-single-right">
+              <div className ="tech-used">
+                <img src={JavaScript} alt="JavaScript"/>
+                <img src={HTML5} alt="HTML5"/>
+                <img src={CSS} alt="CSS"/>
+                <img src={Excalidraw} alt="Excalidraw"/>
+                <img src={GitHub} alt="GitHub"/>
+              </div>
+              <div className="project-reflections">
+                <h5> Wins 🥇 </h5>
+                <h6> I added my stretch targets - A reset button, a timer, flags and difficulty levels. </h6>
+                <h5> Main Takeaway 🎓 </h5>
+                <h6> Keep it Simple! </h6>
+            </div>
+            </div>
+            </div>
+        </div>
+        </main>
       <div className='break' id="skills-break"></div>
       <main className="skills-wrapper">
         <div className="skills-container">
@@ -239,7 +343,7 @@ const Homepage = () => {
           {images.map((image, index) => (
             <div className='Image' key={index}>
               <img className = 'skills-image' src={image.imageSrc} alt={image.name} />
-              {/* <div className = 'skills-name'>{image.name}</div> */}
+              <div className = 'skills-name'>{image.name}</div>
             </div>
           ))}
           </div>
@@ -251,11 +355,11 @@ const Homepage = () => {
           <h1 className="interests-title" > Interests </h1>
           <div className="interests-intro">
           <div className="interests-text">
-            <h4> Food </h4>
+            <h4> Food 🍲 </h4>
             <h5> I am on a one man mission to find the best value, hidden gems across London. I have also worked on market stalls supporting start up confectionary business Artizan Fudge. </h5>
-            <h4> Simpsons </h4>
+            <h4> Simpsons 📺 </h4>
             <h5> As a huge Simpsons fan, I ran a series of Simpsons themed pub quizzes for hundreds of attendees. This included finding a venue, marketing, selling tickets on eventbrite and writing the quiz! </h5>
-            <h4> Podcasts </h4>
+            <h4> Podcasts 🎧 </h4>
             <h5> In my previous job, long commutes led to a love of podcasts. In particular, I listen to current affairs and comedy ones. The show I am currently listening to is <a href="https://www.vox.com/land-of-the-giants-podcast" target="_blank" rel="noreferrer">Land of the Giants,</a> the story of how FAANG grew to be the companies they are today. </h5>
           </div>
           <div className="interests-images">
@@ -268,16 +372,16 @@ const Homepage = () => {
       <div className='break' id="contact-break"></div>
       <main className="contact-wrapper">
         <div className="contact-container">
-          <h1 className="contact-title" > Come Say Hi ! </h1>
+          <h1 className="contact-title" > Come Say Hi! </h1>
           <div className="contact-intro">
           <a href="https://www.linkedin.com/in/jrose117/" target="_blank" rel="noreferrer"> 
-            <img src = {LinkedIn} alt = "LinkedIn"/>
+            <div className = 'contact-image'><img src = {LinkedIn} alt = "LinkedIn"/></div>
           </a>
           <a href="https://github.com/JRose117/" target="_blank" rel="noreferrer"> 
-            <img src = {GitHub} alt = "GitHub"/>
+            <div className = 'contact-image'><img src = {GitHub} alt = "GitHub"/></div>
           </a>
           <a href="mailto:joerose3546@gmail.com?subject=Hi Joe!" target="_blank" rel="noreferrer">
-            <img src = {EmailMe} alt = "Email Me"/>
+            <div className = 'contact-image'><img src = {EmailMe} alt = "Email Me"/></div>
           </a>
           </div>
         </div>
