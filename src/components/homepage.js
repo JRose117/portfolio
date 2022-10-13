@@ -157,6 +157,7 @@ const Homepage = () => {
       <main className="about-wrapper">
         <div className="about-container">
           <h1 className="about-title" > About </h1>
+          <h6> Joe Rose, Junior Software Developer </h6>
           <div className="about-intro">
             <img src = {Me} alt = "Joe"/>
             <h5>When I was 21 years old, in my first year out of University, I took part in the intensive <span className="about-bold">Teach First</span> Programme. The programme places graduates, with minimal training, into the countries’ most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill of which I am incredibly proud. As a Maths teacher I achieved incredible grades for my students and have since held <span className="about-bold">leadership</span> positions in school. <br></br><br></br>I have recently completed the <span className="about-bold">General Assembly Boot Camp,</span> where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering <span className="about-bold">HTML, CSS, JavaScript, MERN and Python/ Django.</span> Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
@@ -201,9 +202,9 @@ const Homepage = () => {
               </div>
               <div className="project-reflections">
                 <h5> Wins 🥇 </h5>
-                <h6> I got to play around and experiment a lot. </h6>
+                <h6> I got my categories section working and users can upload their own images </h6>
                 <h5> Main Takeaway 🎓 </h5>
-                <h6> New languages are nothing to be scared of. Now I've learnt the concepts, I can't wait to learn more!</h6>
+                <h6> New languages are nothing to be scared of. Now I've learnt the concepts, I can't wait to learn more! </h6>
             </div>
             </div>
             </div>
@@ -284,7 +285,6 @@ const Homepage = () => {
                 <img src={ReactIcon} alt="React"/>
                 <img src={Bootstrap} alt="Bootstrap"/>
                 <img src={Excalidraw} alt="Excalidraw"/>
-                <img src={Heroku} alt="Heroku"/>
                 <img src={GitHub} alt="GitHub"/>
                 <img src={Netlify} alt="Netlify"/>
                 <img src={Insomnia} alt="Insomnia"/>
