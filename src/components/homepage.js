@@ -220,7 +220,7 @@ const Homepage = () => {
                   <a href="https://sei-project3-moviematch.netlify.app/" target="_blank" rel="noreferrer"> 
                     <img className="deployment" src = {Chain} alt="Link to Website"/>
                   </a>
-                  <a href="https://github.com/JRose117/" target="_blank" rel="noreferrer"> 
+                  <a href="https://github.com/JRose117/sei-project-03-fe" target="_blank" rel="noreferrer"> 
                     <img className="deployment" src = {GitHub} alt="Link to GitHub"/>
                   </a>
                 </div>
