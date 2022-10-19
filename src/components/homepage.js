@@ -85,7 +85,7 @@ const images = [
     imageSrc: JavaScript,
   },
   {
-    name: "JSON Web Token",
+    name: "JWT",
     imageSrc: JSON,
   },
   {
