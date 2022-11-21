@@ -28,6 +28,12 @@
 
 .interests-wrapper, .projectb-detail-wrapper, .about-wrapper  {
   background: $background-one;
+  h1, h2, h3, h4, h5, h6{
+    color: black;
+    }
+  .about-bold{
+    color:black
+  }
 }
 
 .about-intro {
@@ -140,6 +146,8 @@ h5 {
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 }
+
+
 }
 
 @media (min-width: 768px){
