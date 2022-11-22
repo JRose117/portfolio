@@ -156,8 +156,8 @@ const Homepage = () => {
       <div className="break" id="about-break"></div>
       <main className="about-wrapper">
         <div className="about-container">
-          <h1 className="about-title" > About </h1>
-          <h6> Joe Rose, Junior Software Developer </h6>
+          <h1 className="about-title" > Joe Rose </h1>
+          <h6> Junior Software Developer </h6>
           <div className="about-intro">
             <img src = {Me} alt = "Joe"/>
             <h5>When I was 21 years old, in my first year out of University, I took part in the intensive <span className="about-bold">Teach First</span> Programme. The programme places graduates, with minimal training, into the country’s most challenging schools. Through hard work, determination and by quickly implementing all feedback given to me, I developed a valued skill of which I am incredibly proud. As a Maths teacher I achieved incredible grades for my students and have since held <span className="about-bold">leadership</span> positions in school. <br></br><br></br>I have recently completed the <span className="about-bold">General Assembly Boot Camp,</span> where the same hard work, perseverance and adaptability was needed. Over the 3 month programme, I completed four projects, covering <span className="about-bold">HTML, CSS, JavaScript, MERN and Python/ Django.</span> Throughout the course, I enjoyed the challenge of learning something totally new every day and having to adapt what I had just learnt to complete unfamiliar tasks. I am at the beginning of my journey as a software developer and so I am incredibly keen to keep learning and keep growing my skill set.  
