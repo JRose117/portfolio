@@ -161,7 +161,7 @@ const Homepage = () => {
           <div className="about-intro">
             <img src = {Me} alt = "Joe"/>
             <h5>This summer, I graduated from General Assembly’s Software Engineering bootcamp, where I completed four projects using HTML, CSS, JavaScript, MERN and Python/ Django. This course taught me how to learn at speed and adapt my knowledge to solve problems in new, unfamiliar tasks.<br></br><br></br>
-Previously, I was a Maths teacher and worked in the start up space. As a teacher, I graduated as ‘Outstanding’ from the competitive Teach First programme which places graduates in the country's most challenging schools. My commitment, adaptability and efficient use of data meant my students dramatically exceeded their targets. <br></br><br></br>
+Previously, I worked as an experienced Maths teacher and in the start up space. As a teacher, I graduated as ‘Outstanding’ from the competitive Teach First programme which places graduates in the country's most challenging schools. My commitment, adaptability and efficient use of data meant my students dramatically exceeded their targets. <br></br><br></br>
 I took a year out to co-found an EdTech start-up, Akiva.uk, where I aimed to transform how all schools use their data. For this work, I was a finalist for the Indus Entrepreneurs Start Up competition and recognised as the most promising start-up within the field of Education.<br></br><br></br>
 </h5>
           </div>
