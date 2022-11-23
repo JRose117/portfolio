@@ -206,7 +206,7 @@ I took a year out to co-found an EdTech start-up, Akiva.uk, where I aimed to tra
                 <h5> Wins 🥇 </h5>
                 <h6> I got my categories section working and users can upload their own images </h6>
                 <h5> Main Takeaway 🎓 </h5>
-                <h6> New languages are nothing to be scared of. Now I've learnt the concepts, I can't wait to learn more! </h6>
+                <h6> New languages are nothing to be scared of. Now I've learnt the main concepts, I can't wait to learn more! </h6>
             </div>
             </div>
             </div>
