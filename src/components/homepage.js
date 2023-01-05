@@ -184,6 +184,7 @@ I took a year out to co-found an EdTech start-up, Akiva.uk, where I aimed to tra
                   </a>
                 </div>
                 <h5> Week 11, Solo, 1 Week</h5>
+                <p> Due to Heroku Changes, this project is offline. Will be back soon! </p>
                 <a href="https://i-got-there-first.herokuapp.com/" target="_blank" rel="noreferrer"> 
                   <div className="project-image"><img src={Project4} alt="Project4"/></div>
                 </a>
